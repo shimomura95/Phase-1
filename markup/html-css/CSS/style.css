@@ -115,3 +115,23 @@ footer {
 .fa-door-open {
     margin-right: 4px;
 }
+
+/* entry */
+
+.entry-wrap {
+    padding: 175px 0;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.entry-title {
+    margin-bottom: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #191919;
+}
+
+.entry-btn {
+    width: 320px;
+}
