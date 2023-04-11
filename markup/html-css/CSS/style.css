@@ -158,9 +158,10 @@ footer {
 }
 
 .about-wrap {
-    margin-top: 60px;
+    width: 1200px;
     display:flex;
     flex-wrap:wrap;
+    margin-top: 60px;
 }
 
 .about-item {
@@ -172,9 +173,9 @@ footer {
     margin-right: 100px;
 }
 
-.about-item:nth-child(3) .about-item:nth-child(6){
+.about-item:nth-child(3) .about-item:nth-child(6){  
     margin-right: 0;
-}
+ } 
 
 .about-item:nth-child(n+4):nth-child(-n+6) {
     margin-top: 47px;
