@@ -287,3 +287,82 @@ footer {
 .entry-btn {
     width: 320px;
 }
+
+/* contact */
+
+#contact {
+    background-image: url(/img/bg3.png);
+    background-size: cover;
+    color: #fff;
+}
+
+#contact .title::before, #contact .title::after {
+    border-color: #fff;
+}
+
+.contact-wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+input, select {
+    height: 55px;
+}
+
+textarea {
+    height: 185px;
+}
+
+select {
+    appearance: none;
+}
+
+.contact-box:nth-of-type(3) {
+    position: relative;
+}
+
+.contact-box:nth-of-type(3)::after {
+    position: absolute;
+    background-image: url(/img/arrow.png);
+    background-size: 100%;
+    display: block;
+    content:"";
+    width: 15px;
+    height: 15px;
+    top: 60%;
+    right: 20px;
+}
+
+.contact-caution {
+    margin: 60px 0 25px;
+    font-size: 15px;
+}
+
+.contact-box {
+    margin-bottom: 33px;
+}
+
+.contact-box:nth-of-type(4) {
+    margin-bottom: 0px;
+}
+
+.contact-text {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.red {
+    color: red;
+    margin-left: 8px;
+}
+
+.caution-red {
+    margin-left: 0;
+    margin-right: 8px;
+}
