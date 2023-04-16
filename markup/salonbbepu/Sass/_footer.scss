@@ -1,0 +1,25 @@
+footer {
+    width: 1070px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px 60px 100px;
+
+}
+
+.footer-logo {
+    display: flex;
+    font-size: 32px;
+    color: #7070704D;
+    margin: 3px 0;
+}
+
+.i-wrap {
+    color: black;
+    font-size: 20px;
+    padding: 8px 0 5px;
+
+    &:nth-of-type(1) {
+        margin-left: 25px;
+    }
+}
