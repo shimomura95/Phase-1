@@ -1,5 +1,7 @@
 header {
     display: flex;
+    position: absolute;
+    z-index: 20;
 
     nav {
         width: 400px;
