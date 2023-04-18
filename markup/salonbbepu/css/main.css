@@ -1,3 +1,206 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.title::after {
+  display: inline-block;
+  content: "";
+  width: 80px;
+  border-top: 1px solid #707070;
+  margin-left: 15px;
+}
+
 header {
   display: flex;
   position: absolute;
@@ -6,7 +209,7 @@ header {
 header nav {
   width: 400px;
   height: 45px;
-  padding: 88px 0 0 0;
+  padding: 80px 0 0 0;
 }
 header nav ul {
   display: flex;
@@ -23,10 +226,11 @@ header nav ul li:nth-child(n+2) {
 }
 
 .header-logo {
-  width: 300px;
   padding: 70px 0 0 80px;
   font-size: 38px;
+  font-family: "Roboto Mono for Powerline";
   text-align: right;
+  white-space: nowrap;
 }
 
 #first-v {
@@ -46,18 +250,71 @@ header nav ul li:nth-child(n+2) {
 .catch1 {
   width: 320px;
   padding: 300px 0 48px 170px;
-  margin: 0;
   font-weight: bold;
   font-family: "Hiragino Mincho Pro";
+  white-space: nowrap;
 }
 
 .catch2 {
   width: 400px;
-  height: 130px;
-  margin: 0;
   padding-left: 100px;
   font-family: "Zapfino";
   text-align: center;
+}
+
+#concept {
+  background: linear-gradient(180deg, rgba(161, 147, 134, 0.1215686275) 50%, rgba(161, 147, 134, 0.537254902) 50%);
+}
+
+.title {
+  padding-top: 260px;
+  margin-left: 13%;
+}
+
+.concept-item {
+  display: flex;
+  justify-content: center;
+}
+.concept-item_img1 {
+  width: 675px;
+  height: 420px;
+}
+.concept-item_img1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.concept-item_img2 {
+  width: 400px;
+  height: 420px;
+  margin-left: 10px;
+}
+.concept-item_img2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.concept-content {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.concept-content_title {
+  width: 445px;
+  height: 45px;
+  font-size: 42px;
+  white-space: nowrap;
+  padding: 90px 0 130px;
+  text-align: center;
+}
+.concept-content_text {
+  width: 420px;
+  height: 130px;
+  font-size: 16px;
+  padding: 70px 0;
 }
 
 footer {
