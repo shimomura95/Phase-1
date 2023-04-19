@@ -186,6 +186,12 @@ select {
   vertical-align: middle;
 }
 
+.inner {
+  width: 80%;
+  margin: 0 auto;
+  padding: 260px 0 70px;
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -266,17 +272,12 @@ header nav ul li:nth-child(n+2) {
   background: linear-gradient(180deg, rgba(161, 147, 134, 0.1215686275) 50%, rgba(161, 147, 134, 0.537254902) 50%);
 }
 
-.title {
-  padding-top: 260px;
-  margin-left: 13%;
-}
-
 .concept-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .concept-item_img1 {
-  width: 675px;
+  width: 62%;
   height: 420px;
 }
 .concept-item_img1 img {
@@ -286,9 +287,8 @@ header nav ul li:nth-child(n+2) {
      object-fit: cover;
 }
 .concept-item_img2 {
-  width: 400px;
+  width: 36%;
   height: 420px;
-  margin-left: 10px;
 }
 .concept-item_img2 img {
   width: 100%;
@@ -307,7 +307,7 @@ header nav ul li:nth-child(n+2) {
   height: 45px;
   font-size: 42px;
   white-space: nowrap;
-  padding: 90px 0 130px;
+  padding: 90px 0 0 0px;
   text-align: center;
 }
 .concept-content_text {
@@ -315,6 +315,90 @@ header nav ul li:nth-child(n+2) {
   height: 130px;
   font-size: 16px;
   padding: 70px 0;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  width: 25%;
+}
+
+.menu_img {
+  width: 100%;
+  height: 270px;
+}
+.menu_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-content {
+  padding: 40px 10px 0;
+}
+.menu-content_title {
+  font-size: 30px;
+  text-align: center;
+}
+.menu-content_text {
+  width: 90%;
+  font-size: 16px;
+  padding: 35px 0;
+}
+.menu-content_cost {
+  font-size: 16px;
+  text-align: right;
+}
+
+#access {
+  background-color: rgba(161, 147, 134, 0.1215686275);
+}
+
+.ac-inner {
+  width: 80%;
+  padding: 260px 0 70px;
+  margin: 0 auto;
+}
+
+.access-item {
+  width: 40%;
+  background-color: #D0C5BA;
+}
+
+.access-wrap {
+  display: flex;
+}
+
+.access-content {
+  padding: 100px 0 100px 50px;
+  color: #FFFFFF;
+}
+.access-content_title {
+  color: rgba(0, 0, 0, 0.2196078431);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.access-content_text {
+  margin-bottom: 24px;
+}
+.access-content_tn {
+  margin-bottom: 24px;
+}
+.access-content_time {
+  margin-bottom: 24px;
+}
+
+.access-map {
+  width: 100%;
+}
+.access-map_ifram {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
