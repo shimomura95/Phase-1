@@ -401,19 +401,23 @@ header nav ul li:nth-child(n+2) {
   height: 100%;
 }
 
-footer {
-  width: 1070px;
-  height: 40px;
+.ft-b::before {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  border-top: 1px solid rgba(112, 112, 112, 0.2117647059);
+  margin-bottom: 80px;
+}
+
+.ft-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0 110px 60px 100px;
 }
 
 .footer-logo {
   display: flex;
   font-size: 32px;
   color: rgba(112, 112, 112, 0.3019607843);
-  margin: 3px 0;
 }
 
 .i-wrap {
@@ -423,4 +427,16 @@ footer {
 }
 .i-wrap:nth-of-type(1) {
   margin-left: 25px;
+}
+
+button {
+  border: 1px solid #707070;
+}
+
+.footer-btn {
+  width: 140px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #707070;
 }/*# sourceMappingURL=main.css.map */
