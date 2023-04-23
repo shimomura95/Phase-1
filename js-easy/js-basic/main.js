@@ -154,3 +154,71 @@ while (i < 10) {
     console.log(i);
     i++
 }
+
+// 関数
+//   定義
+function cook() {
+    console.log("料理が出来上がりました。");
+}
+//  実行(呼び出す)
+cook()
+cook()
+
+// 引数=変数
+function Cook(food) {
+    console.log(`${food}が出来上がりました。`);
+}
+
+// 実行する時、引数に任意の値を渡す
+Cook("料理")
+Cook("朝食")
+Cook("夕食")
+
+// 引数を2つ用いる
+function CooK(food1, food2) {
+    console.log(`${food1}が出来上がりました。`);
+    console.log(`${food2}が出来上がりました。`);
+}
+
+CooK("料理", "朝食")
+CooK("夕食", "間食")
+
+// 戻り値
+function applyTax(price) {  //消費税10%込みの金額を出力
+    // console.log(price * 1.1);
+    return price * 1.1
+}
+
+applyTax(1000)
+applyTax(580)
+
+// 上の結果を合計
+console.log(applyTax(1000) + applyTax(580));
+
+// 関数の結果を変数に代入
+function applyTAx(price) {
+    return price * 1.1;
+}
+
+const result1 = applyTAx(1000)
+const result2 = applyTAx(580)
+
+console.log(result1 + result2);
+
+// 関数式
+const applyTAX = function (price) {
+    return price * 1.1
+}
+
+// アロー関数
+const applYTax = (price) => {
+    return price * 1.1
+}
+
+// 引数が1つの場合、()を省略できる
+const applYTAx = price => {
+    return price * 1.1
+}
+
+// 処理が1行の場合、returnと{}を省略できる
+const applYTAX = price => price * 1.1
